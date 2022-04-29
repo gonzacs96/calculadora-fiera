@@ -1,0 +1,39 @@
+.button-reset {
+    grid-area: 1 / 1 / 2 / 4;
+    width: 100%;
+    height: 4rem;
+    font-size: 3rem;
+    background-color: gray;
+}
+
+.button-cero {
+    grid-area: 5 / 1 / 6 / 4;
+    width: 100%;
+    height: 4rem;
+    font-size: 3rem;
+    background-color: gray;
+}
+
+.operator-button{
+    height: 4rem;
+    width: 4rem;
+    font-size: 3rem;
+    background-color: orange;
+    color: white;
+}
+
+.number-button{
+    height: 4rem;
+    width: 4rem;
+    font-size: 3rem;
+    background-color: gray;
+}
+
+button{
+    border: none;
+}
+
+button:hover{
+    filter: brightness(130%);
+    cursor: pointer;
+}

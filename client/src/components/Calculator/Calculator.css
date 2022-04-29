@@ -1,0 +1,32 @@
+.calculator{
+    border: 15px solid rgb(236, 236, 136);
+}
+
+.calculator-body {
+    display: flex;
+    align-items: center;
+}
+
+.calculator-operators {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows:5;
+    grid-row-gap: 3px;
+    margin-left: 3px;
+}
+
+.calculator-numbers {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+}
+
+.calculator-display{
+    text-align: right;
+    font-size: 3rem;
+    color: white;
+    background-color: black;
+    margin-bottom: 3px;
+}
