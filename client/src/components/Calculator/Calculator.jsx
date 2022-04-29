@@ -2,10 +2,9 @@ import React from "react";
 import "./Calculator.css";
 import CalculatorButton from "../CalculatorButton/CalculatorButton";
 
-const operators = ["+", "-", "*", "/", "="];
-const numbers = ["9", "8", "7", "6", "5", "4", "3", "2", "1", "0"];
 
-export default function Calculator() {
+
+export default function Calculator({numbers,operators}) {
   return (
     <div className="calculator">
       <div className="calculator-header">
