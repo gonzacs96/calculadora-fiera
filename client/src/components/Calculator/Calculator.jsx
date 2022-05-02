@@ -117,7 +117,7 @@ export default function Calculator({ numbers, operators }) {
               onClick={onButtonResetClick}
               name="C"
             />
-            {numbers.map((number) => {
+            {numbers.map((number,index) => {
               return (
                 <CalculatorButton
                   opOrNumber={number}
@@ -126,8 +126,9 @@ export default function Calculator({ numbers, operators }) {
                     "button-cero" : 
                     number === "." ?
                     "button-point":
-                    "number-button"
+                    "number-button"  
                   }
+                  key={number+index}
                   onClick={onButtonNumberClick}
                   name={number}
                 />
@@ -135,13 +136,14 @@ export default function Calculator({ numbers, operators }) {
             })}
           </div>
           <div className="calculator-operators">
-            {operators.map((op) => {
+            {operators.map((op,index) => {
               return (
                 <CalculatorButton
                   opOrNumber={op}
                   propClassName="operator-button"
                   onClick={op === "=" ? onEqualClick : onOperationButtonClick}
                   name={op}
+                  key={op+index}
                 />
               );
             })}
